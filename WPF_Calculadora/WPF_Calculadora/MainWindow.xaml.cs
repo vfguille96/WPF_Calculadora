@@ -150,6 +150,9 @@ namespace WPF_Calculadora
 				escrito = tmp;
 				txbPantalla.Text = escrito;
 			}
+			
+			if (txbPantalla.Text == string.Empty)
+				txbPantalla.Text = "0";
 		}
 
 		private void btn2_Click(object sender, RoutedEventArgs e)
